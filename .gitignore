@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+ml/models/
+ml/data/
+
+node_modules/
+
+
+
