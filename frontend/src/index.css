@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+/* LAYOUT */
+.app {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* TEXT */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* UPLOAD */
+.upload-box {
+  border: 2px dashed #3b82f6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.preview {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+.btn-blue {
+  background: #3b82f6;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.btn-red {
+  background: #ef4444;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.btn-green {
+  background: #22c55e;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* BADGES */
+.badge-safe {
+  background: #22c55e;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-toxic {
+  background: orange;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-abuse {
+  background: red;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* LOADER */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #3b82f6;
+  border-top: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CAMERA */
+.camera {
+  margin-top: 20px;
+}
